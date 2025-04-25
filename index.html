@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+ <html lang="it">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberty V1</title>
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2b0000, #8b0000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: fadeIn 2s ease-in-out;
+  }
+
+  h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: slideIn 1.5s ease forwards;
+  }
+
+  .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .btn {
+  background-color: white;
+  color: #8b0000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .images {
+  display: flex;
+  justify-content: center; /* Centra l'immagine orizzontalmente */
+  margin-top: 40px; /* Aggiunge spazio tra i pulsanti e l'immagine */
+  }
+
+  .images img {
+  width: auto; /* Permette all'altezza di scalare proporzionalmente */
+  max-width: 80%; /* Imposta una larghezza massima per non farla diventare troppo grande su schermi larghi */
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  }
+
+  .images img:hover {
+  transform: scale(1.05);
+  }
+
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  }
+
+  @keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+  }
+  </style>
+ </head>
+ <body>
+  <h1>🔥 Liberty V1 🔥</h1>
+  <div class="buttons">
+  <a href="https://drive.usercontent.google.com/download?id=14DA0k9VyqexSQABbiKqWEk16Amp5y_OK&export=download&authuser=0&confirm=t&uuid=1ea6549b-5c75-434a-912b-a333079c18a2&at=APcmpoxeluqR67osKwvVhw8mBjhr%3A1745582154698" download>
+  <button class="btn">📥 Download</button>
+  </a>
+  <a href="https://discord.gg/pb3q9ybSPG" target="_blank">
+  <button class="btn">💬 Join Discord</button>
+  </a>
+  </div>
+
+  <div class="images">
+  <img src="liberty.png" alt="Liberty Image">
+  </div>
+ </body>
+ </html>
